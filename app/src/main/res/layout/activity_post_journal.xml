@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:elevation="20dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PostJournal">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/post_user_name"
+    android:text="@string/prakash"
+    android:textColor="#000"
+    android:textSize="23sp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="10dp"
+    />
+
+    <ImageView
+        android:id="@+id/back_img"
+        android:layout_width="398dp"
+        android:layout_height="206dp"
+        android:layout_below="@+id/post_user_name"
+        android:layout_marginTop="10dp"
+        android:src="@color/colorAccent" />
+
+    <ImageView
+        android:id="@+id/postCameraButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_below="@+id/post_user_name"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/cam" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/back_img"
+        android:layout_marginTop="10dp"
+        android:id="@+id/random"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title"
+            android:id="@+id/title_post"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+       android:layout_below="@+id/random"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rand2"
+        android:layout_height="wrap_content">
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="150dp"
+        android:id="@+id/progressbar_post"
+        android:layout_below="@id/back_img"
+        />
+    <EditText
+        android:id="@+id/description_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/random"
+
+        android:hint="@string/thoughts" />
+
+    <Button
+        android:id="@+id/post"
+        android:layout_width="406dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/description_post"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="299dp"
+        android:layout_marginBottom="1dp"
+        android:background="#A2435C"
+        android:text="@string/post" />
+
+
+
+
+
+</RelativeLayout>

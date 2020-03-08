@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#EEF7EF"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context=".login.CreateAccount">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleLarge"
+        android:visibility="gone"
+        android:id="@+id/progress_create_acc"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/email_login_form"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="@string/username"
+                android:id="@+id/username"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="@string/email"
+                android:id="@+id/email_create_acc"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            tools:ignore="ExtraText">
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="@string/password"
+                android:id="@+id/password_create_acc"
+                android:layout_marginTop="20dp"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:layout_height="wrap_content"  />
+
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:layout_marginTop="16dp"
+            android:id="@+id/email_signUp_btn"
+            android:background="#8B2F2F"
+            android:textColor="#fff"
+            android:bottomRightRadius="10dp"
+            android:bottomLeftRadius="10dp"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already a User??"
+
+                android:textSize="17sp"
+                android:id="@+id/text"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in"
+                android:id="@+id/sign_in_create"
+
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:textColor="#8B2F2F"
+                android:layout_toRightOf="@+id/text"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#0C0C0C"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="18dp"
+
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:elevation="-30dp"
+        android:id="@+id/title"
+        android:textColor="#ffff"
+
+        android:text="@string/self_gratitude_journal"
+        android:textSize="30sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/get_started"
+        android:background="@android:color/transparent"
+        android:id="@+id/button_get_started"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+
+        android:textColor="#EC0000"/>
+</LinearLayout>

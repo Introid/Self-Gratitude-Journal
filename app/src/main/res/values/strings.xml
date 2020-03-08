@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Self</string>
+    <string name="self_gratitude_journal">Self.Gratitude.Journal</string>
+    <string name="greatful_text">Greatful Text</string>
+    <string name="what_are_you_greatful_for">What Are You Greatful for</string>
+    <string name="get_started">Get started</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">login</string>
+    <string name="new_here">New Here??</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="signup">SignUp</string>
+    <string name="signin">SignIn</string>
+    <string name="sign_in">sign In</string>
+    <string name="prakash">Prakash</string>
+    <string name="title">Title</string>
+    <string name="Thoughts">Description</string>
+    <string name="thoughts">Thoughts</string>
+    <string name="post">Post</string>
+</resources>
